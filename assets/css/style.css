@@ -1,0 +1,169 @@
+@charset "utf-8";
+
+.container {
+  max-width: 1356px;
+  /* background-color: beige; */
+  margin: 0 auto;
+}
+
+.ad-top {
+  position: relative;
+  background-color: #ffe0e1;
+}
+
+.ad-top .container .stop-look {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.ad-top .container .stop-look button.btn-stopText {
+  font-size: 14px;
+  color: #5C6677;
+  cursor: pointer;
+}
+
+.ad-top .container .stop-look button.btn-close {
+  width: 24px;
+  height: 24px;
+  background: url(../img/icon_close_1.svg);
+  margin-left: 10px;
+  text-indent: -9999px;
+} 
+
+
+
+/* header */
+
+.header {
+  padding: 0 30px;
+}
+
+.header .container .header-top {
+  display: flex;
+  align-items: center;
+  padding-top: 12px;
+}
+
+/* header-top */
+
+.header .container .header-top button.lang-select {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #1b1e23;
+  height: 20px;
+}
+
+.header .container .header-top .lang-select::before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 17px;
+  background: url(../img/icon_gnb_language.svg) no-repeat center;
+}
+
+.header .container .header-top .lang-select::after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 8px;
+  background: url(../img/icon_arrow_6.svg) no-repeat center;
+}
+
+.header .container .header-top a.exchange-rate {
+  flex: 1;
+  position: relative;
+  font-size: 12px;
+  font-weight: 500;
+  color: #1b1e23;
+  margin-left: 24px;
+}
+
+.header .container .header-top a.exchange-rate::before {
+  position: absolute;
+  top: 4px;
+  left: -12px;
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 10px;
+  background-color: #dde0e5;
+}
+
+.header .container .header-top ul {
+  display: flex;
+  gap: 24px;
+}
+
+.header .container .header-top ul li {
+  position: relative;
+}
+
+.header .container .header-top ul li::after {
+  position: absolute;
+  top: 4px;
+  right: -13px;
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 10px;
+  background-color: #dde0e5;
+}
+
+.header .container .header-top ul li:nth-of-type(4)::after {
+  display: none;
+}
+
+.header .container .header-top ul li a {
+  font-weight: 500;
+  color: #5c6677;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+  height: 1000px;
+  background-color: beige;
+}
