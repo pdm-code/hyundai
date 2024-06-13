@@ -258,49 +258,120 @@
   color: #1b1e23;
 }
 
+/* banner-wrap */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.footer {
-  height: 1000px;
-  background-color: beige;
+.banner-wrap .container .bannerSwiper {
+  overflow: hidden;
 }
+
+.banner-wrap .container .bannerSwiper .swiper-wrapper {
+  display: flex;
+}
+
+.banner-wrap .container .bannerSwiper .swiper-wrapper .swiper-slide a {
+  position: relative;
+  width: 666px;
+  height: 666px;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.banner-wrap .container .bannerSwiper .swiper-wrapper .swiper-slide a::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0) 66%, rgba(0,0,0,0.4) 100%);
+  z-index: 1;
+}
+
+.banner-wrap .container .bannerSwiper .swiper-wrapper .swiper-slide a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner-wrap .container .bannerSwiper .swiper-wrapper .swiper-slide a .banner-txt {
+  position: absolute;
+  bottom: 56px;
+  left: 56px;
+  color: #fff;
+  z-index: 2;
+}
+
+.banner-wrap .container .bannerSwiper .swiper-wrapper .swiper-slide a .banner-txt p {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.33;
+  letter-spacing: -0.9px;
+  margin-bottom: 10px;
+}
+
+.banner-wrap .container .bannerSwiper .swiper-wrapper .swiper-slide a .banner-txt span {
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: -0.45px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* special-price-wrap */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

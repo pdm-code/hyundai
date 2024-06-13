@@ -6,9 +6,33 @@
     <title>현대백화점인터넷면세점</title>
     <!-- favicon_H -->
     <!-- <link rel="shortcut icon" href="https://cdn.hddfs.com/front/images/KO/common/favicon_H.ico"> -->
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <!-- css -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/reset.css">
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- swiper js cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- script.js -->
+    <script>
+        $(document).ready(function(){
+            // 배너 스와이퍼
+            var swiper = new Swiper('.bannerSwiper', {
+                slidesPerView: 2,
+                spaceBetween: 24,
+                direction: 'horizontal',
+                loop: true,
+
+                pagination: {
+                    el: ".swiper-pagination",
+                    type: "progressbar",
+                },
+            });
+        });
+    </script>
+
 </head>
 <body>
     <div class="wrapper">
@@ -74,11 +98,55 @@
         </div>
         <!-- banner-wrap -->
         <div class="banner-wrap">
-            <div class="container"></div>
+            <div class="container">
+                <div class="bannerSwiper">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <img src="https://cdn.hddfs.com/files/dm/20240612/7aebb009_202406121014503080.gif?sf=webp&RS=670x994" alt="M_적립금 일괄다운">
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <img src="https://cdn.hddfs.com/files/dm/20240610/39d45765_202406101032005570.gif?sf=webp&RS=670x994" alt="C_주특기(센텔리안24)">
+                                <div class="banner-txt">
+                                    <p>센텔리안24 신상 입고!<br>지금 구매하면 100% 사은품 증정</p>
+                                    <span>6/10~6/23</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <img src="https://cdn.hddfs.com/files/dm/20240610/55d35291_202406101056361430.gif?sf=webp&RS=670x994" alt="C_보석함(데이즈데이즈)">
+                                <div class="banner-txt">
+                                    <p>데이즈데이즈<br>전상품 30% 할인</p>
+                                    <span>구매 사은 행사까지 놓치지 마세요!</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <img src="https://cdn.hddfs.com/files/dm/20240613/3130dc13_202406131009466880.jpg?sf=webp&RS=670x994" alt="C_보스">
+                                <div class="banner-txt">
+                                    <p>프리미엄 오디오<br>BOSE</p>
+                                    <span>브랜드플러스적립금 5천원 받고 구매하세요!</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="control-box"></div>
+                </div>
+            </div>
         </div>
         <!-- special-price-wrap -->
-        <div class="special-price-wrap ">
-            <div class="container"></div>
+        <div class="special-price-wrap">
+            <div class="container">
+                <div class="price-text-wrap">
+                    <div>
+                        
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- area-personal-link -->
         <div class="area-personal-link">
